@@ -1,0 +1,9 @@
+<launch>
+	<arg name="rviz" default="true"/>	
+
+	<node pkg="get_line" type="get_line_node" name="getLP_node" output="screen"/>
+
+	<group if="$(arg rviz)">
+	  <node launch-prefix="nice" pkg = "rviz" type = "rviz" name = "rviz" args="-d $(find get_line)/rviz_cfg/pcl_test_change.rviz"/>
+	</group>
+</launch>

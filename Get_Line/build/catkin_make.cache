@@ -1,0 +1,2 @@
+get_line
+-DCATKIN_DEVEL_PREFIX=/home/qianjie/Get_Line/devel -DCMAKE_INSTALL_PREFIX=/home/qianjie/Get_Line/install -G Unix Makefiles
